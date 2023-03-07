@@ -1096,15 +1096,6 @@ call everforest#highlight('IndentBlanklineChar', s:palette.bg5, s:palette.none, 
 highlight! link IndentBlanklineSpaceChar IndentBlanklineChar
 highlight! link IndentBlanklineSpaceCharBlankline IndentBlanklineChar
 " }}}
-" p00f/nvim-ts-rainbow {{{
-highlight! link rainbowcol1 Red
-highlight! link rainbowcol2 Orange
-highlight! link rainbowcol3 Yellow
-highlight! link rainbowcol4 Green
-highlight! link rainbowcol5 Aqua
-highlight! link rainbowcol6 Blue
-highlight! link rainbowcol7 Purple
-" }}}
 " romgrk/barbar.nvim {{{
 call everforest#highlight('BufferCurrent', s:palette.fg, s:palette.bg0)
 call everforest#highlight('BufferCurrentIndex', s:palette.fg, s:palette.bg0)
@@ -1201,8 +1192,8 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
-call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.red)
+call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.blue)
 call everforest#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.aqua, 'bold')
 call everforest#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.statusline2, 'bold')
 call everforest#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.statusline1, 'bold')
