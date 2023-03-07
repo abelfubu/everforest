@@ -37,7 +37,7 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ 'bg2':        ['#1e222a',   '237'],
             \ 'bg3':        ['#1e222a',   '238'],
             \ 'bg4':        ['#1e222a',   '239'],
-            \ 'bg5':        ['#1e222a',   '240'],
+            \ 'bg5':        ['#2e323a',   '240'],
             \ 'bg_visual':  ['#3a515d',   '52'],
             \ 'bg_red':     ['#514045',   '52'],
             \ 'bg_green':   ['#425047',   '22'],
