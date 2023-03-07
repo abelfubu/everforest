@@ -1059,9 +1059,9 @@ highlight! link TroubleCode Grey
 " }}}
 " nvim-telescope/telescope.nvim {{{
 call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none, 'bold')
-highlight! link TelescopeBorder Grey
-highlight! link TelescopePromptPrefix Orange
-highlight! link TelescopeSelection DiffAdd
+call everforest#highlight('TelescopeBorder', s:palette.bg0, s:palette.none, 'normal')
+call everforest#highlight('TelescopePromptPrefix', s:palette.purple, s:palette.none, 'normal')
+call everforest#highlight('TelescopeSelection', s:palette.purple, s:palette.none, 'normal')
 " }}}
 " lewis6991/gitsigns.nvim {{{
 highlight! link GitSignsAdd GreenSign
