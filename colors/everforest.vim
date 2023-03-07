@@ -241,7 +241,7 @@ if has('nvim')
 endif
 " }}}
 " Syntax: {{{
-call everforest#highlight('Boolean', s:palette.purple, s:palette.none)
+call everforest#highlight('Boolean', s:palette.green, s:palette.none)
 call everforest#highlight('Number', s:palette.purple, s:palette.none)
 call everforest#highlight('Float', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
