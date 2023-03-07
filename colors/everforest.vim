@@ -1058,10 +1058,19 @@ highlight! link TroubleSource Grey
 highlight! link TroubleCode Grey
 " }}}
 " nvim-telescope/telescope.nvim {{{
-call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none, 'bold')
-call everforest#highlight('TelescopeBorder', s:palette.bg0, s:palette.none, 'bold')
-call everforest#highlight('TelescopePromptPrefix', s:palette.purple, s:palette.none, 'bold')
-call everforest#highlight('TelescopeSelection', s:palette.purple, s:palette.none, 'bold')
+call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none)
+call everforest#highlight('TelescopeBorder', s:palette.bg0, s:palette.none)
+call everforest#highlight('TelescopePromptBorder', s:palette.bg5, s:palette.bg5)
+call everforest#highlight('TelescopePromptNormal', s:palette.fg, s:palette.bg5)
+call everforest#highlight('TelescopePromptPrefix', s:palette.orange, s:palette.bg5)
+call everforest#highlight('TelescopeSelection', s:palette.blue, s:palette.none)
+call everforest#highlight('TelescopePreviewTitle', s:palette.bg0, s:palette.green)
+call everforest#highlight('TelescopePromptTitle', s:palette.bg0, s:palette.red)
+call everforest#highlight('TelescopeResultsTitle', s:palette.bg0, s:palette.blue)
+call everforest#highlight('TelescopeDiffAdd', s:palette.green, s:palette.none)
+call everforest#highlight('TelescopeDiffChange', s:palette.yellow, s:palette.none)
+call everforest#highlight('TelescopeDiffDelete', s:palette.red, s:palette.none)
+
 " }}}
 " lewis6991/gitsigns.nvim {{{
 highlight! link GitSignsAdd GreenSign
