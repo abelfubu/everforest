@@ -283,7 +283,7 @@ call everforest#highlight('Character', s:palette.green, s:palette.none)
 call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
 call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
-call everforest#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
+call everforest#highlight('Todo', s:palette.bg0, s:palette.red, 'bold')
 if s:configuration.disable_italic_comment
   call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
   call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
@@ -449,7 +449,7 @@ highlight! link TSEnvironment Macro
 highlight! link TSEnvironmentName Type
 highlight! link TSError Error
 highlight! link TSException Red
-highlight! link TSField Blue
+highlight! link TSField Yellow
 highlight! link TSFloat Green
 highlight! link TSFuncBuiltin Blue
 highlight! link TSFuncMacro Green
@@ -459,7 +459,7 @@ highlight! link TSInclude Red
 highlight! link TSKeyword Blue
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
-highlight! link TSKeywordReturn Red
+highlight! link TSKeywordReturn Green
 highlight! link TSLabel Orange
 highlight! link TSLiteral String
 highlight! link TSMath Blue
@@ -472,7 +472,7 @@ highlight! link TSOperator Orange
 highlight! link TSParameter Fg
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
-highlight! link TSProperty Blue
+highlight! link TSProperty Yellow
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
