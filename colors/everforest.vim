@@ -249,26 +249,26 @@ if s:configuration.enable_italic
   call everforest#highlight('PreCondit', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Include', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Define', s:palette.purple, s:palette.none, 'italic')
-  call everforest#highlight('Conditional', s:palette.red, s:palette.none, 'italic')
+  call everforest#highlight('Conditional', s:palette.green, s:palette.none, 'italic')
   call everforest#highlight('Repeat', s:palette.red, s:palette.none, 'italic')
-  call everforest#highlight('Keyword', s:palette.red, s:palette.none, 'italic')
+  call everforest#highlight('Keyword', s:palette.blue, s:palette.none, 'italic')
   call everforest#highlight('Typedef', s:palette.red, s:palette.none, 'italic')
   call everforest#highlight('Exception', s:palette.red, s:palette.none, 'italic')
-  call everforest#highlight('Statement', s:palette.red, s:palette.none, 'italic')
+  call everforest#highlight('Statement', s:palette.green, s:palette.none, 'italic')
 else
   call everforest#highlight('PreProc', s:palette.purple, s:palette.none)
   call everforest#highlight('PreCondit', s:palette.purple, s:palette.none)
   call everforest#highlight('Include', s:palette.purple, s:palette.none)
-  call everforest#highlight('Define', s:palette.purple, s:palette.none)
-  call everforest#highlight('Conditional', s:palette.red, s:palette.none)
+  call everforest#highlight('Define', s:palette.green, s:palette.none)
+  call everforest#highlight('Conditional', s:palette.green, s:palette.none)
   call everforest#highlight('Repeat', s:palette.red, s:palette.none)
-  call everforest#highlight('Keyword', s:palette.red, s:palette.none)
+  call everforest#highlight('Keyword', s:palette.blue, s:palette.none)
   call everforest#highlight('Typedef', s:palette.red, s:palette.none)
   call everforest#highlight('Exception', s:palette.red, s:palette.none)
-  call everforest#highlight('Statement', s:palette.red, s:palette.none)
+  call everforest#highlight('Statement', s:palette.green, s:palette.none)
 endif
 call everforest#highlight('Error', s:palette.red, s:palette.none)
-call everforest#highlight('StorageClass', s:palette.orange, s:palette.none)
+call everforest#highlight('StorageClass', s:palette.yellow, s:palette.none)
 call everforest#highlight('Tag', s:palette.orange, s:palette.none)
 call everforest#highlight('Label', s:palette.orange, s:palette.none)
 call everforest#highlight('Structure', s:palette.orange, s:palette.none)
@@ -277,8 +277,8 @@ call everforest#highlight('Title', s:palette.orange, s:palette.none, 'bold')
 call everforest#highlight('Special', s:palette.yellow, s:palette.none)
 call everforest#highlight('SpecialChar', s:palette.yellow, s:palette.none)
 call everforest#highlight('Type', s:palette.yellow, s:palette.none)
-call everforest#highlight('Function', s:palette.green, s:palette.none)
-call everforest#highlight('String', s:palette.green, s:palette.none)
+call everforest#highlight('Function', s:palette.blue, s:palette.none)
+call everforest#highlight('String', s:palette.red, s:palette.none)
 call everforest#highlight('Character', s:palette.green, s:palette.none)
 call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
@@ -434,15 +434,15 @@ call everforest#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call everforest#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
 highlight! link TSAnnotation Purple
 highlight! link TSAttribute Purple
-highlight! link TSBoolean Purple
+highlight! link TSBoolean Blue
 highlight! link TSCharacter Aqua
 highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
-highlight! link TSConditional Red
-highlight! link TSConstBuiltin PurpleItalic
+highlight! link TSConditional Blue
+highlight! link TSConstBuiltin BlueItalic
 highlight! link TSConstMacro PurpleItalic
 highlight! link TSConstant Fg
-highlight! link TSConstructor Green
+highlight! link TSConstructor Blue
 highlight! link TSDebug Debug
 highlight! link TSDefine Define
 highlight! link TSEnvironment Macro
@@ -450,13 +450,13 @@ highlight! link TSEnvironmentName Type
 highlight! link TSError Error
 highlight! link TSException Red
 highlight! link TSField Blue
-highlight! link TSFloat Purple
-highlight! link TSFuncBuiltin Green
+highlight! link TSFloat Green
+highlight! link TSFuncBuiltin Blue
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSFunctionCall Green
 highlight! link TSInclude Red
-highlight! link TSKeyword Red
+highlight! link TSKeyword Blue
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
 highlight! link TSKeywordReturn Red
@@ -480,7 +480,7 @@ highlight! link TSRepeat Red
 highlight! link TSStorageClass Orange
 highlight! link TSStorageClassLifetime Orange
 highlight! link TSStrike Grey
-highlight! link TSString Aqua
+highlight! link TSString Red
 highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
 highlight! link TSStringSpecial SpecialChar
@@ -1473,7 +1473,7 @@ if !s:configuration.transparent_background
   call everforest#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
 endif
 highlight! link NvimTreeSymlink Fg
-highlight! link NvimTreeFolderName Green
+highlight! link NvimTreeFolderName Grey
 highlight! link NvimTreeRootFolder Grey
 highlight! link NvimTreeFolderIcon Orange
 highlight! link NvimTreeEmptyFolderName Green
