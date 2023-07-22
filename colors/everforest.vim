@@ -456,7 +456,7 @@ highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSFunctionCall Green
 highlight! link TSInclude Red
-highlight! link TSKeyword Blue
+highlight! link TSKeyword Fg
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
 highlight! link TSKeywordReturn Green
@@ -1746,12 +1746,12 @@ call everforest#highlight('htmlBoldUnderlineItalic', s:palette.none, s:palette.n
 call everforest#highlight('htmlUnderline', s:palette.none, s:palette.none, 'underline')
 call everforest#highlight('htmlUnderlineItalic', s:palette.none, s:palette.none, 'underline,italic')
 call everforest#highlight('htmlItalic', s:palette.none, s:palette.none, 'italic')
-highlight! link htmlTag Green
-highlight! link htmlEndTag Blue
-highlight! link htmlTagN OrangeItalic
-highlight! link htmlTagName OrangeItalic
+highlight! link htmlTag Fg
+highlight! link htmlEndTag Fg
+highlight! link htmlTagN Blue
+highlight! link htmlTagName Blue
 highlight! link htmlArg Aqua
-highlight! link htmlScriptTag Purple
+highlight! link htmlScriptTag Red
 highlight! link htmlSpecialTagName RedItalic
 " }}}
 " syn_end }}}
@@ -1849,23 +1849,23 @@ highlight! link javaScriptGlobal Purple
 highlight! link javaScriptMessage Yellow
 highlight! link javaScriptFunction Keyword
 highlight! link javaScriptOperator Orange
-highlight! link javaScriptMember Aqua
+highlight! link javaScriptMember Fg
 " }}}
 " vim-javascript: https://github.com/pangloss/vim-javascript {{{
-highlight! link jsString Aqua
+highlight! link jsString Red
 highlight! link jsTemplateString jsString
-highlight! link jsThis Purple
+highlight! link jsThis Blue
 highlight! link jsUndefined Aqua
 highlight! link jsNull Aqua
 highlight! link jsNan Aqua
-highlight! link jsSuper Purple
-highlight! link jsPrototype Purple
+highlight! link jsSuper Yellow
+highlight! link jsPrototype Yellow
 highlight! link jsFunction Keyword
 highlight! link jsGlobalNodeObjects Include
 highlight! link jsGlobalObjects Yellow
-highlight! link jsArrowFunction Purple
-highlight! link jsArrowFuncArgs Blue
-highlight! link jsFuncArgs Identifier
+highlight! link jsArrowFunction Yellow
+highlight! link jsArrowFuncArgs Fg
+highlight! link jsFuncArgs Fg
 highlight! link jsBlockLabel Fg
 highlight! link jsClassDefinition Type
 highlight! link jsClassStringKey Fg
@@ -2026,9 +2026,9 @@ highlight! link jsxAttrib Aqua
 " syn_end }}}
 " syn_begin: typescript/typescriptreact {{{
 " vim-typescript: https://github.com/leafgarland/typescript-vim {{{
-highlight! link typescriptSource PurpleItalic
+highlight! link typescriptSource GreenItalic
 highlight! link typescriptMessage Yellow
-highlight! link typescriptGlobalObjects Aqua
+highlight! link typescriptGlobalObjects Fg
 highlight! link typescriptInterpolation Yellow
 highlight! link typescriptInterpolationDelimiter Yellow
 highlight! link typescriptBraces Fg
