@@ -441,7 +441,7 @@ highlight! link TSComment Comment
 highlight! link TSConditional Blue
 highlight! link TSConstBuiltin BlueItalic
 highlight! link TSConstMacro PurpleItalic
-highlight! link TSConstant Fg
+highlight! link TSConstant Blue
 highlight! link TSConstructor Blue
 highlight! link TSDebug Debug
 highlight! link TSDefine Define
@@ -467,18 +467,18 @@ highlight! link TSMethod Green
 highlight! link TSMethodCall Green
 highlight! link TSNamespace YellowItalic
 highlight! link TSNone Fg
-highlight! link TSNumber Purple
+highlight! link TSNumber Green
 highlight! link TSOperator Orange
 highlight! link TSParameter Fg
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
-highlight! link TSProperty Yellow
+highlight! link TSProperty Fg
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
 highlight! link TSRepeat Red
-highlight! link TSStorageClass Orange
-highlight! link TSStorageClassLifetime Orange
+highlight! link TSStorageClass Yellow
+highlight! link TSStorageClassLifetime Yellow
 highlight! link TSStrike Grey
 highlight! link TSString Red
 highlight! link TSStringEscape Green
@@ -1330,7 +1330,7 @@ highlight! link CocSymbolString Aqua
 highlight! link CocSymbolNumber Aqua
 highlight! link CocSymbolBoolean Aqua
 highlight! link CocSymbolArray Aqua
-highlight! link CocSymbolObject Aqua
+highlight! link CocSymbolObject Fg
 highlight! link CocSymbolKey Red
 highlight! link CocSymbolNull Aqua
 highlight! link CocSymbolEnumMember Aqua
@@ -1444,7 +1444,7 @@ highlight! link AerialTypeParameterIcon Yellow
 " syn_end }}}
 " syn_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
-highlight! link NERDTreeDir Green
+highlight! link NERDTreeDir Fg
 highlight! link NERDTreeDirSlash Aqua
 highlight! link NERDTreeOpenable Orange
 highlight! link NERDTreeClosable Orange
@@ -1817,11 +1817,11 @@ highlight! link scssFunctionName Yellow
 " syn_end }}}
 " syn_begin: sass {{{
 " builtin: {{{
-highlight! link sassProperty Aqua
-highlight! link sassAmpersand Orange
+highlight! link sassProperty Fg
+highlight! link sassAmpersand Fg
 highlight! link sassClass RedItalic
 highlight! link sassClassChar Red
-highlight! link sassMixing PurpleItalic
+highlight! link sassMixing GreenItalic
 highlight! link sassMixinName Orange
 highlight! link sassCssAttribute Yellow
 highlight! link sassInterpolationDelimiter Green
@@ -1866,16 +1866,16 @@ highlight! link jsGlobalObjects Yellow
 highlight! link jsArrowFunction Purple
 highlight! link jsArrowFuncArgs Blue
 highlight! link jsFuncArgs Identifier
-highlight! link jsBlockLabel Aqua
+highlight! link jsBlockLabel Fg
 highlight! link jsClassDefinition Type
-highlight! link jsClassStringKey Aqua
+highlight! link jsClassStringKey Fg
 highlight! link jsDot Grey
 highlight! link jsObjectColon Grey
 highlight! link jsDestructuringBlock Blue
 highlight! link jsModuleKeyword Yellow
 highlight! link jsTemplateExpression Yellow
 highlight! link jsTemplateBraces Yellow
-highlight! link jsClassMethodType Orange
+highlight! link jsClassMethodType Yellow
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link javascriptTSInclude Purple
