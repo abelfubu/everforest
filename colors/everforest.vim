@@ -245,7 +245,7 @@ call everforest#highlight('Boolean', s:palette.green, s:palette.none)
 call everforest#highlight('Number', s:palette.purple, s:palette.none)
 call everforest#highlight('Float', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
-  call everforest#highlight('PreProc', s:palette.purple, s:palette.none, 'italic')
+  call everforest#highlight('PreProc', s:palette.blue, s:palette.none, 'italic')
   call everforest#highlight('PreCondit', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Include', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Define', s:palette.purple, s:palette.none, 'italic')
@@ -1892,7 +1892,7 @@ highlight! link javascriptOpSymbols Orange
 highlight! link javascriptVariable Orange
 highlight! link javascriptObjectLabel Fg
 highlight! link javascriptObjectLabelColon Grey
-highlight! link javascriptPropertyNameString Aqua
+highlight! link javascriptPropertyNameString Fg
 highlight! link javascriptFuncArg Blue
 highlight! link javascriptIdentifier Purple
 highlight! link javascriptArrowFunc Purple
@@ -1981,7 +1981,7 @@ highlight! link javascriptArrayMethod Green
 highlight! link javascriptMathStaticMethod Green
 highlight! link javascriptSubtleCryptoMethod Green
 highlight! link javascriptCryptoMethod Green
-highlight! link javascriptProp Aqua
+highlight! link javascriptProp Fg
 highlight! link javascriptBOMWindowProp Aqua
 highlight! link javascriptDOMStorageProp Aqua
 highlight! link javascriptFileReaderProp Aqua
@@ -2035,22 +2035,22 @@ highlight! link typescriptBraces Fg
 highlight! link typescriptParens Fg
 " }}}
 " yats: https:github.com/HerringtonDarkholme/yats.vim {{{
-highlight! link typescriptMethodAccessor OrangeItalic
+highlight! link typescriptMethodAccessor Yellow
 highlight! link typescriptVariable Orange
-highlight! link typescriptVariableDeclaration Blue
+highlight! link typescriptVariableDeclaration Fg
 highlight! link typescriptTypeReference Yellow
 highlight! link typescriptBraces Fg
 highlight! link typescriptEnumKeyword RedItalic
 highlight! link typescriptEnum Yellow
 highlight! link typescriptIdentifierName Aqua
-highlight! link typescriptProp Aqua
-highlight! link typescriptCall Blue
+highlight! link typescriptProp Fg
+highlight! link typescriptCall Yellow
 highlight! link typescriptInterfaceName Yellow
 highlight! link typescriptEndColons Fg
-highlight! link typescriptMember Aqua
+highlight! link typescriptMember Fg
 highlight! link typescriptMemberOptionality Orange
 highlight! link typescriptObjectLabel Aqua
-highlight! link typescriptArrowFunc Purple
+highlight! link typescriptArrowFunc Yellow
 highlight! link typescriptAbstract Orange
 highlight! link typescriptObjectColon Grey
 highlight! link typescriptTypeAnnotation Grey
@@ -2062,12 +2062,12 @@ highlight! link typescriptClassName Yellow
 highlight! link typescriptClassHeritage Yellow
 highlight! link typescriptInterfaceHeritage Yellow
 highlight! link typescriptIdentifier Purple
-highlight! link typescriptGlobal Purple
+highlight! link typescriptGlobal Green
 highlight! link typescriptOperator RedItalic
 highlight! link typescriptNodeGlobal PurpleItalic
-highlight! link typescriptExport PurpleItalic
+highlight! link typescriptExport Green
 highlight! link typescriptDefaultParam Orange
-highlight! link typescriptImport PurpleItalic
+highlight! link typescriptImport GreenItalic
 highlight! link typescriptTypeParameter Yellow
 highlight! link typescriptReadonlyModifier Orange
 highlight! link typescriptAccessibilityModifier Orange
@@ -2079,11 +2079,11 @@ highlight! link typescriptCastKeyword RedItalic
 highlight! link typescriptOptionalMark Orange
 highlight! link typescriptNull Aqua
 highlight! link typescriptMappedIn RedItalic
-highlight! link typescriptFuncTypeArrow Purple
+highlight! link typescriptFuncTypeArrow Yellow
 highlight! link typescriptTernaryOp Orange
-highlight! link typescriptParenExp Blue
-highlight! link typescriptIndexExpr Blue
-highlight! link typescriptDotNotation Grey
+highlight! link typescriptParenExp Fg
+highlight! link typescriptIndexExpr Fg
+highlight! link typescriptDotNotation Fg
 highlight! link typescriptGlobalNumberDot Grey
 highlight! link typescriptGlobalStringDot Grey
 highlight! link typescriptGlobalArrayDot Grey
@@ -2146,7 +2146,7 @@ highlight! link typescriptDateMethod Green
 highlight! link typescriptArrayStaticMethod Green
 highlight! link typescriptArrayMethod Green
 highlight! link typescriptMathStaticMethod Green
-highlight! link typescriptStringProperty Aqua
+highlight! link typescriptStringProperty Fg
 highlight! link typescriptDOMStorageProp Aqua
 highlight! link typescriptFileReaderProp Aqua
 highlight! link typescriptURLUtilsProp Aqua
@@ -2159,7 +2159,7 @@ highlight! link typescriptPaymentProp Aqua
 highlight! link typescriptPaymentResponseProp Aqua
 highlight! link typescriptPaymentAddressProp Aqua
 highlight! link typescriptPaymentShippingOptionProp Aqua
-highlight! link typescriptES6SetProp Aqua
+highlight! link typescriptES6SetProp Fg
 highlight! link typescriptServiceWorkerProp Aqua
 highlight! link typescriptES6MapProp Aqua
 highlight! link typescriptRegExpStaticProp Aqua
@@ -2169,8 +2169,8 @@ highlight! link typescriptXHRProp Aqua
 highlight! link typescriptDOMEventProp Aqua
 highlight! link typescriptDOMDocProp Aqua
 highlight! link typescriptBOMNetworkProp Aqua
-highlight! link typescriptSymbolStaticProp Aqua
-highlight! link typescriptEncodingProp Aqua
+highlight! link typescriptSymbolStaticProp Fg
+highlight! link typescriptEncodingProp Fg
 highlight! link typescriptBOMLocationProp Aqua
 highlight! link typescriptCryptoProp Aqua
 highlight! link typescriptDOMFormProp Aqua
